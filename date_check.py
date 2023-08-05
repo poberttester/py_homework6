@@ -15,7 +15,7 @@ def date_check(in_arg: list):
     try:
         value_from_terminal = in_arg[1]
         datetime.strptime(value_from_terminal, '%d.%m.%Y').date()
-        print(in_arg)
+        print(value_from_terminal) # Оставил принты для удобства
         return True
     except IndexError:
         try:
